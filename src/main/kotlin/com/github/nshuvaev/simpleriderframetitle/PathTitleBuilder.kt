@@ -1,4 +1,4 @@
-package com.nshuvaev.simpleriderframetitle
+package com.github.nshuvaev.simpleriderframetitle
 
 import com.intellij.openapi.project.Project
 import com.intellij.openapi.vfs.VirtualFile
