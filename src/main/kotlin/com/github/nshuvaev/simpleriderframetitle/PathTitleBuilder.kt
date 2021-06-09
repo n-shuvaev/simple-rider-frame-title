@@ -13,5 +13,4 @@ class PathTitleBuilder : FrameTitleBuilder() {
     override fun getFileTitle(project: Project): String {
         return project.getBaseDir().getName()
     }
-
 }
