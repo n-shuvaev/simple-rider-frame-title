@@ -9,7 +9,7 @@ class TitleComponent : ApplicationComponent {
     override fun initComponent() {
         val picoContainer = ApplicationManager.getApplication().picoContainer as MutablePicoContainer
         picoContainer.unregisterComponent(FRAME_TITLE_BUILDER)
-        picoContainer.registerComponentImplementation(FRAME_TITLE_BUILDER, PathTitleBuilder::class)
+        picoContainer.registerComponentImplementation(FRAME_TITLE_BUILDER, PathTitleBuilder::class.java)
     }
 
     override fun getComponentName(): String {
