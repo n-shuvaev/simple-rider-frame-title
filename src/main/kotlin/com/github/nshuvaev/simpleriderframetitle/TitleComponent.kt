@@ -12,13 +12,11 @@ class TitleComponent : ApplicationComponent {
         picoContainer.registerComponentImplementation(FRAME_TITLE_BUILDER, PathTitleBuilder::class.java)
     }
 
-    override fun disposeComponent() {}
-
     override fun getComponentName(): String {
         return javaClass.simpleName
     }
 
     companion object {
-        val FRAME_TITLE_BUILDER = "com.intellij.openapi.wm.impl.FrameTitleBuilder"
+        const FRAME_TITLE_BUILDER = "com.intellij.openapi.wm.impl.FrameTitleBuilder"
     }
 }
