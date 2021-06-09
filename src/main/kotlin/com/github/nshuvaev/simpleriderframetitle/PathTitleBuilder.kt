@@ -6,11 +6,11 @@ import com.intellij.openapi.wm.impl.FrameTitleBuilder
 
 class PathTitleBuilder : FrameTitleBuilder() {
 
-    override fun getProjectTitle(project: Project, virtualFile: VirtualFile): String {
+    override fun getFileTitle(project: Project, virtualFile: VirtualFile): String {
         return virtualFile.getName()
     }
 
-    override fun getFileTitle(project: Project): String {
+    override fun getProjectTitle(project: Project): String {
         return project.getBaseDir().getName()
     }
 }
