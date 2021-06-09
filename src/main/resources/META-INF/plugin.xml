@@ -7,13 +7,9 @@
     <!-- https://plugins.jetbrains.com/docs/intellij/plugin-compatibility.html -->
     <depends>com.intellij.modules.platform</depends>
 
-    <extensions defaultExtensionNs="com.intellij">
-        <applicationService serviceImplementation="com.github.nshuvaev.simpleriderframetitle.services.MyApplicationService"/>
-        <projectService serviceImplementation="com.github.nshuvaev.simpleriderframetitle.services.MyProjectService"/>
-    </extensions>
-
-    <applicationListeners>
-        <listener class="com.github.nshuvaev.simpleriderframetitle.listeners.MyProjectManagerListener"
-                  topic="com.intellij.openapi.project.ProjectManagerListener"/>
-    </applicationListeners>
+    <application-components>
+        <component>
+            <implementation-class>com.github.nshuvaev.simpleriderframetitle.TitleComponent</implementation-class>
+        </component>
+    </application-components>
 </idea-plugin>
